@@ -8,8 +8,8 @@ app.use(express.urlencoded({extended:true}))
 app.set('view engine','ejs')
 app.set('views','view')
 
-const taxRoute = require('./route/tax')
-app.use(taxRoute)
+const loginRoute =require('./route/login')
+app.use(loginRoute)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
